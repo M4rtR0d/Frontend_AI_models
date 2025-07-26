@@ -1,0 +1,86 @@
+.sidebar {
+  width: 260px; /* Ancho del sidebar */
+  background-color: #282A2C; /* Color de fondo oscuro */
+  color: #fff; /* Color del texto */
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  position: fixed; /* Fijo en la pantalla */
+  top: 0;
+  left: 0;
+  overflow-y: auto; /* Para desplazamiento si el contenido es muy largo */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.sidebar-header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-logo-icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #00bcd4; /* Color del icono de React/Creative Tim */
+}
+
+.sidebar-brand {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.sidebar-nav {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  flex-grow: 1; /* Permite que la lista crezca y ocupe espacio disponible */
+}
+
+.sidebar-nav-item {
+  margin-bottom: 5px; /* Espacio entre los elementos de la lista */
+}
+
+.sidebar-nav-item a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #ddd; /* Color del texto de los enlaces */
+  text-decoration: none; /* Elimina el subrayado */
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-nav-item a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo al pasar el ratón */
+  color: #fff;
+}
+
+.sidebar-nav-item.active a {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  border-radius: 5px; /* Bordes ligeramente redondeados */
+  margin: 0 10px; /* Margen para que el fondo no ocupe todo el ancho */
+}
+
+.nav-icon {
+  margin-right: 15px; /* Espacio entre el icono y el texto */
+  font-size: 20px;
+  width: 25px; /* Asegura un ancho consistente para los iconos */
+  text-align: center;
+}
+
+.sidebar-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* Altura de la sección de la imagen de fondo */
+  background-image: url('https://images.unsplash.com/photo-1519681393784-d1202679399c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTc5fDB8MXxzZWFyY2h8Mnx8bW91bnRhaW5zY2FwZSUyMHdpdGglMjBzaGVlcHxlbnwwfHx8fDE3MjEwNzQ2MDh8MA&ixlib=rb-4.0.3&q=80&w=1080'); /* URL de la imagen de fondo */
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.3; /* Transparencia de la imagen */
+  z-index: -1; /* Envía la imagen detrás del contenido */
+}
