@@ -3,12 +3,7 @@ import './Sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faChartPie,
-  faUser,
-  faList,
-  faFont,
-  faAtom,
-  faMapMarkerAlt,
-  faBell,
+  faList,  
 } from '@fortawesome/free-solid-svg-icons';
 // Si usas React Router DOM para la navegación
 import { Link } from 'react-router-dom';
