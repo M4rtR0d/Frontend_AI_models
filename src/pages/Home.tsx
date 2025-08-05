@@ -39,9 +39,10 @@ const Home: React.FC = () => {
     <div className="home">
       <div className="dashboard-container">
         <div className="home-header">
-          <h1>👋 ¡Bienvenido al Dashboard de Modelos!</h1>
+          <h1>👋 ¡Modelos de I.A. entrenados!</h1>
           <p style={{ fontSize: '1.1rem', color: '#64748b', marginBottom: 12 }}>
             Aquí puedes consultar y gestionar los modelos de Machine Learning disponibles en el sistema.<br />
+            
             Actualmente tienes acceso a un modelo de predicción de nota basado en redes neuronales.
           </p>
           <button className="btn btn-primary" style={{ marginTop: 10 }} onClick={() => navigate('/models')}>
