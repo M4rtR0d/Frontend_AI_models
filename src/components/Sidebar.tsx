@@ -38,6 +38,12 @@ const Sidebar: React.FC<SidebarProps> = () => {
       <div className="sidebar-background">
         {/*  */}
       </div>
+      <div className="sidebar-background">
+        {/*  */}
+      </div>
+      <div style={{ textAlign: 'center', marginTop: 24, marginBottom: 24, color: '#64748b', fontSize: 14 }}>
+        M4rtinr 2025
+      </div>
     </div>
   );
 };

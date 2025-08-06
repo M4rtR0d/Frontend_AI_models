@@ -15,7 +15,7 @@ const MODELS = [
     },
     {
         id: "linear_regression",
-        name: 'Regresión Lineal - Predicción de Nota',
+        name: 'Regressssión Lineal - Predicción de Nota',
         type: 'linear_regression',
         description: 'Modelo de regresión lineal para predecir la nota final de un estudiante a partir de sus características académicas y personales.',
         status: 'inactive',
